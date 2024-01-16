@@ -1,14 +1,16 @@
 // import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, StatusBar, Pressable, Keyboard } from 'react-native';
 import { colors, parameters } from "./src/constants/styles";
+import HomeScreen from './src/screens/HomeScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="green" translucent />
+      {/* <StatusBar barStyle="dark-content" backgroundColor="green" translucent />
       <Pressable onPress={Keyboard.dismiss}>
         <Text>Open up App.js to start working on your app!</Text>
-      </Pressable>
+      </Pressable> */}
+      <HomeScreen/>
     </View>
   );
 }
